@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OUR website</title>
+</head>
+<body class = "abc">
+
+    <a href="index.html" class = "heart-pos">
+        <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+            <div class="svg-container">
+                <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                    </path>
+                </svg>
+                <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                    </path>
+                </svg>
+                <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="10,10 20,20"></polygon>
+                    <polygon points="10,50 20,50"></polygon>
+                    <polygon points="20,80 30,70"></polygon>
+                    <polygon points="90,10 80,20"></polygon>
+                    <polygon points="90,50 80,50"></polygon>
+                    <polygon points="80,80 70,70"></polygon>
+                </svg>
+            </div>
+        </div>
+    .</a>
+    <pre class = "game1"> 
+                  Welcome TO The Game, 
+                  Lets Find Out How much 
+                  Do you Know About Me ?? 
+
+    </pre>
+    
+    <div class="quiz-container">
+      <div class="question" id="question1">Who is my favorite female Cricketer?
+        </div>
+      <div class="options" id="options1">
+        <button onclick="checkAnswer('Mithali', 'result1')">Mithali Raj</button>
+        <button onclick="checkAnswer('Smrithi', 'result1')">Smrithi</button>
+        <button onclick="checkAnswer('Shafali', 'result1')">Shafali</button>
+      </div>
+      <div class="result" id="result1"></div>
+    </div>
+  
+    <div class="quiz-container">
+      <div class="question" id="question2">What is my favorite Song?</div>
+      <div class="options" id="options2">
+        <button onclick="checkAnswer('Char', 'result2')">Char Kadham</button>
+        <button onclick="checkAnswer('Kar', 'result2')">Kar har Maidaan Fateh</button>
+        <button onclick="checkAnswer('Aarambh', 'result2')">Aarambh hai prachand</button>
+      </div>
+      <div class="result" id="result2"></div>
+    </div>
+  
+    <div class="quiz-container">
+      <div class="question" id="question3">What is my favorite animal?</div>
+      <div class="options" id="options3">
+        <button onclick="checkAnswer('Dog', 'result3')">Dog</button>
+        <button onclick="checkAnswer('Cat', 'result3')">Cat</button>
+        <button onclick="checkAnswer('YOU', 'result3')">YOU</button>
+      </div>
+      <div class="result" id="result3"></div>
+    </div>
+  
+    <div class="quiz-container">
+      <div class="question" id="question4">What's my favorite sporting moment of all time?
+      </div>
+      <div class="options" id="options4">
+        <button onclick="checkAnswer('Basket', 'result4')">Basket in front of You</button>
+        <button onclick="checkAnswer('Kabbadi', 'result4')">4 points Kabbadi raid</button>
+        <button onclick="checkAnswer('SIX', 'result4')">Winning SIX</button>
+      </div>
+      <div class="result" id="result4"></div>
+    </div>
+  
+    <div class="quiz-container">
+      <div class="question" id="question5">What is my favorite Fruit?</div>
+      <div class="options" id="options5">
+        <button onclick="checkAnswer('Mango', 'result5')">Mango</button>
+        <button onclick="checkAnswer('Fanas', 'result5')">Fanas</button>
+        <button onclick="checkAnswer('Strawberry', 'result5')">Strawberry</button>
+      </div>
+      <div class="result" id="result5"></div>
+    </div>
+  
+    <div class="quiz-container">
+      <div class="question" id="question6">What is my favorite movie genre?</div>
+      <div class="options" id="options6">
+        <button onclick="checkAnswer('Thrill', 'result6')">Thriller</button>
+        <button onclick="checkAnswer('Action', 'result6')">Action</button>
+        <button onclick="checkAnswer('Drama', 'result6')">Drama</button>
+      </div>
+      <div class="result" id="result6"></div>
+    </div>
+  
+    <div class="quiz-container">
+      <div class="question" id="question7">Who is my role model?      </div>
+      <div class="options" id="options7">
+        <button onclick="checkAnswer('MSD', 'result7')">MSD</button>
+        <button onclick="checkAnswer('APJ', 'result7')">Dr APJ Abdul Kalam</button>
+        <button onclick="checkAnswer('YOU', 'result7')">YOU</button>
+      </div>
+      <div class="result" id="result7"></div>
+    </div>
+    <div id="totalCorrect"></div>
+    <script>
+      function checkAnswer(answer, resultId) {
+        let correctAnswer;
+        let resultContainer = document.getElementById(resultId);
+  
+        switch (resultId) {
+          case 'result1':
+            correctAnswer = 'Smrithi';
+            break;
+          case 'result2':
+            correctAnswer = 'Kar';
+            break;
+          case 'result3':
+            correctAnswer = 'YOU';
+            break;
+          case 'result4':
+            correctAnswer = 'SIX';
+            break;
+          case 'result5':
+            correctAnswer = 'Mango';
+            break;
+          case 'result6':
+            correctAnswer = 'Thrill';
+            break;
+          case 'result7':
+            correctAnswer = 'APJ';
+            break;
+        }
+  
+        if (answer === correctAnswer) {
+          resultContainer.textContent = 'Correct!';
+        } else {
+          resultContainer.textContent = 'Incorrect. Try again.';
+        }
+
+        document.getElementById('totalCorrect').textContent = 'Total Correct Answers: ' + correctAnswers;
+      }
+    </script>
+  </body>
+  
+</html>

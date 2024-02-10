@@ -1,0 +1,9 @@
+/* bootstrap.css */
+dt {
+  font-weight: 700 /* rtl:600 */;
+}
+
+/* bootstrap.rtl.css */
+dt {
+  font-weight: 600;
+}
