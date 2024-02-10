@@ -6,9 +6,11 @@ body {
   margin-right: 1300px;
   margin-left: 0px;
   background-image: url('bg1.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-size: 100%;
+  background-size: cover;
+  background-blend-mode: multiply;
   /* This keeps the background fixed while scrolling */
   /* Add other styling properties as needed */
 }
@@ -1100,7 +1102,7 @@ h1 {
   align-items: center;
   justify-content: center;
   background-size: 1550px;
-  background-image: url("bg4.webp");
+  background-image: url("bg4.jpg");
   background-position: center center;
 }
 .paper {
