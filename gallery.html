@@ -38,11 +38,34 @@
 The photogenic memories 
 which we have created!!
     </pre>
-    <audio autoplay loop>
-        <source src="Beauty.mp3"
-        type = "audio/mp3">
-
+    <audio id="myAudio">
+        <source src="Beauty.mp3" type="audio/mp3">
     </audio>
+    
+    <script>
+        // Get the audio element
+        var audio = document.getElementById("myAudio");
+    
+        // Set the currentTime property to 17 seconds
+        audio.currentTime = 17;
+    
+        // Play the audio
+        audio.play();
+    
+        // Function to loop the audio
+        function loopAudio() {
+            // Set the currentTime property to 17 seconds again
+            audio.currentTime = 17;
+            // Play the audio
+            audio.play();
+            // Schedule the next loop after the audio duration
+            setTimeout(loopAudio, (audio.duration - 17) * 1000);
+        }
+    
+        // Call the loopAudio function to start looping the audio
+        loopAudio();
+    </script>
+    
     <div class="slider_img">
         <span style="--i:1;"><img src = "20songimg.jpg" alt=" "></span>
         <span style="--i:2;"><img src = "15songimg.jpg" alt=" "></span>
